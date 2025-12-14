@@ -1,0 +1,201 @@
+{
+  "phishing_click": {
+    "title": "Phishing Click Response",
+    "immediate_actions": [
+      "Disconnect from the internet immediately",
+      "Do NOT enter any credentials on the phishing site",
+      "Change passwords for all accounts immediately",
+      "Enable two-factor authentication (2FA) on all accounts",
+      "Scan your device with antivirus software"
+    ],
+    "priority_steps": [
+      {
+        "step": 1,
+        "title": "Secure Your Accounts",
+        "actions": [
+          "Change passwords for email, banking, and social media accounts",
+          "Enable 2FA on all critical accounts",
+          "Check for unauthorized access in account activity logs",
+          "Contact your bank if financial information was entered"
+        ]
+      },
+      {
+        "step": 2,
+        "title": "Scan and Clean Device",
+        "actions": [
+          "Run full antivirus scan",
+          "Check for malware or keyloggers",
+          "Update all software and security patches",
+          "Clear browser cache and cookies"
+        ]
+      },
+      {
+        "step": 3,
+        "title": "Report the Incident",
+        "actions": [
+          "Report to your IT department (if work device)",
+          "Report to anti-phishing organizations",
+          "Forward phishing email to reportphishing@apwg.org",
+          "Report to FTC at reportfraud.ftc.gov"
+        ]
+      },
+      {
+        "step": 4,
+        "title": "Monitor for Identity Theft",
+        "actions": [
+          "Monitor bank and credit card statements",
+          "Check credit reports for suspicious activity",
+          "Set up fraud alerts with credit bureaus",
+          "Watch for suspicious emails or calls"
+        ]
+      }
+    ],
+    "evidence_checklist": [
+      "Screenshot of phishing email/message",
+      "URL of phishing website",
+      "Screenshot of phishing website",
+      "Date and time of incident",
+      "List of accounts that may be compromised",
+      "Screenshots of any suspicious activity",
+      "Email headers (if applicable)",
+      "Browser history showing the phishing link"
+    ]
+  },
+  "brand_impersonation": {
+    "title": "Brand Impersonation Response",
+    "immediate_actions": [
+      "Do NOT click any links or download attachments",
+      "Verify the sender's email address carefully",
+      "Check official company website for legitimate contact",
+      "Do NOT provide any personal or financial information",
+      "Report the impersonation to the legitimate brand"
+    ],
+    "priority_steps": [
+      {
+        "step": 1,
+        "title": "Verify Legitimacy",
+        "actions": [
+          "Check sender's email address for typos or suspicious domains",
+          "Visit the official company website directly (not via link)",
+          "Contact the company through official channels",
+          "Compare the message with previous legitimate communications"
+        ]
+      },
+      {
+        "step": 2,
+        "title": "Document the Impersonation",
+        "actions": [
+          "Take screenshots of the impersonation",
+          "Save email headers and full message",
+          "Note the date, time, and platform where seen",
+          "Document any phone numbers or contact methods used"
+        ]
+      },
+      {
+        "step": 3,
+        "title": "Report to Authorities",
+        "actions": [
+          "Report to the impersonated brand's security team",
+          "Report to FTC at reportfraud.ftc.gov",
+          "Report to IC3 (Internet Crime Complaint Center)",
+          "Report to your local law enforcement if financial loss occurred"
+        ]
+      },
+      {
+        "step": 4,
+        "title": "Protect Yourself and Others",
+        "actions": [
+          "Warn friends and family about the scam",
+          "Report on social media platforms if applicable",
+          "Check if you've already been compromised",
+          "Review your accounts for suspicious activity"
+        ]
+      }
+    ],
+    "evidence_checklist": [
+      "Screenshot of impersonation message/email",
+      "Full email headers",
+      "Screenshot of fake website (if applicable)",
+      "Fake phone number or contact information",
+      "Date and time of discovery",
+      "Platform where impersonation was found",
+      "Any links or attachments (do not click)",
+      "Comparison with legitimate brand communications"
+    ]
+  },
+  "data_leak": {
+    "title": "Data Leak Response",
+    "immediate_actions": [
+      "Change passwords for affected accounts immediately",
+      "Enable 2FA on all accounts, especially affected ones",
+      "Check what data was leaked (email, password, credit card, etc.)",
+      "Contact your bank if financial data was exposed",
+      "Freeze your credit reports with all three bureaus"
+    ],
+    "priority_steps": [
+      {
+        "step": 1,
+        "title": "Assess the Damage",
+        "actions": [
+          "Determine what type of data was leaked",
+          "Check if passwords were hashed or in plain text",
+          "Identify all affected accounts and services",
+          "Review the scope of personal information exposed"
+        ]
+      },
+      {
+        "step": 2,
+        "title": "Secure Your Accounts",
+        "actions": [
+          "Change passwords for all affected accounts",
+          "Use unique, strong passwords for each account",
+          "Enable 2FA wherever possible",
+          "Review and revoke suspicious app permissions"
+        ]
+      },
+      {
+        "step": 3,
+        "title": "Protect Financial Information",
+        "actions": [
+          "Contact banks and credit card companies",
+          "Request new card numbers if cards were exposed",
+          "Set up fraud alerts with credit bureaus",
+          "Consider placing a credit freeze"
+        ]
+      },
+      {
+        "step": 4,
+        "title": "Monitor and Report",
+        "actions": [
+          "Monitor bank and credit card statements regularly",
+          "Check credit reports monthly for suspicious activity",
+          "Report to FTC at identitytheft.gov",
+          "Consider identity theft protection service"
+        ]
+      },
+      {
+        "step": 5,
+        "title": "Legal and Compliance",
+        "actions": [
+          "Report to relevant data protection authorities",
+          "Document all steps taken in response",
+          "Keep records of any financial losses",
+          "Consult with legal counsel if significant data exposed"
+        ]
+      }
+    ],
+    "evidence_checklist": [
+      "Notification of data breach (if received)",
+      "List of affected accounts and services",
+      "Type of data leaked (emails, passwords, SSN, etc.)",
+      "Date of leak discovery",
+      "Screenshots of any breach notifications",
+      "Records of password changes",
+      "Credit freeze confirmation numbers",
+      "Fraud alert confirmation",
+      "Bank/credit card correspondence",
+      "Any suspicious activity logs"
+    ]
+  }
+}
+
