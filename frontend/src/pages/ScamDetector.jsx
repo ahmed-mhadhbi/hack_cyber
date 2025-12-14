@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios'
+const API_BASE = import.meta.env.VITE_API_URL || ''
 import { FiSearch, FiShield, FiAlertTriangle, FiCheckCircle, FiZap } from 'react-icons/fi'
 
 export default function ScamDetector() {
@@ -18,7 +19,7 @@ export default function ScamDetector() {
     setResult(null)
 
     try {
-      const response = await axios.post('/api/scan', { type, content })
+      const response = await axios.post(`${API_BASE}/api/scan`, { type, content })
       setResult(response.data)
     } catch (err) {
       console.error('Scan error:', err)

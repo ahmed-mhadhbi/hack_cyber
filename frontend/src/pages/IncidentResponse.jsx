@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios'
+const API_BASE = import.meta.env.VITE_API_URL || ''
 import { FiAlertCircle, FiShield, FiFileText, FiCheckSquare, FiSend, FiAlertTriangle, FiZap, FiCheckCircle } from 'react-icons/fi'
 import responseData from '../data/incidentResponseData.json'
 
@@ -40,7 +41,7 @@ export default function IncidentResponse() {
     setSuccess(false)
 
     try {
-      await axios.post('/api/report', formData)
+      await axios.post(`${API_BASE}/api/report`, formData)
       setSuccess(true)
       setFormData({
         type: 'email',

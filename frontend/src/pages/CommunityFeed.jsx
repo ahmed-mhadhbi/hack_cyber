@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+const API_BASE = import.meta.env.VITE_API_URL || ''
 import { FiUsers, FiPlus, FiThumbsUp, FiGlobe, FiPhone, FiClock, FiTrendingUp, FiAlertCircle } from 'react-icons/fi'
 import { ReportSkeleton } from '../components/LoadingSkeleton'
 
@@ -24,7 +25,7 @@ export default function CommunityFeed() {
 
   const fetchReports = async () => {
     try {
-      const response = await axios.get('/api/reports')
+      const response = await axios.get(`${API_BASE}/api/reports`)
       setReports(response.data)
     } catch (error) {
       console.error('Error fetching reports:', error)
@@ -35,7 +36,7 @@ export default function CommunityFeed() {
 
   const fetchTrending = async () => {
     try {
-      const response = await axios.get('/api/reports/trending')
+      const response = await axios.get(`${API_BASE}/api/reports/trending`)
       const trendingIdsSet = new Set(response.data.map(r => r._id))
       setTrendingIds(trendingIdsSet)
     } catch (error) {
@@ -45,7 +46,7 @@ export default function CommunityFeed() {
 
   const handleUpvote = async (id) => {
     try {
-      await axios.post(`/api/reports/${id}/upvote`)
+      await axios.post(`${API_BASE}/api/reports/${id}/upvote`)
       fetchReports()
       fetchTrending()
     } catch (error) {
@@ -59,7 +60,7 @@ export default function CommunityFeed() {
 
     setSubmitting(true)
     try {
-      await axios.post('/api/report', formData)
+      await axios.post(`${API_BASE}/api/report`, formData)
       setFormData({
         type: 'email',
         content: '',

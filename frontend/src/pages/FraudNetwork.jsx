@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
+const API_BASE = import.meta.env.VITE_API_URL || ''
 import ForceGraph2D from 'react-force-graph-2d'
 import { FiGitBranch, FiInfo, FiX } from 'react-icons/fi'
 import { GraphSkeleton } from '../components/LoadingSkeleton'
@@ -16,7 +17,7 @@ export default function FraudNetwork() {
 
   const fetchNetwork = async () => {
     try {
-      const response = await axios.get('/api/network')
+      const response = await axios.get(`${API_BASE}/api/network`)
       setNetworkData(response.data)
     } catch (error) {
       console.error('Error fetching network:', error)
